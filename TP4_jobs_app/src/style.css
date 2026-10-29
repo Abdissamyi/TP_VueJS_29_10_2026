@@ -1,0 +1,293 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #f6f8fb;
+  color: #172b3a;
+  font-family: Arial, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+.app-shell {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 24px;
+}
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 22px 0;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.brand {
+  color: #172b3a;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.brand-mark {
+  padding: 8px 12px;
+  margin-right: 8px;
+  border-radius: 8px;
+  background: #16a878;
+  color: white;
+}
+
+.brand-accent {
+  color: #16a878;
+}
+
+.main-nav,
+.form-actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.nav-link {
+  color: #475569;
+  font-size: 14px;
+}
+
+.nav-link:hover {
+  color: #16a878;
+}
+
+.nav-cta {
+  padding: 11px 14px;
+  border-radius: 7px;
+  background: #172b3a;
+  color: white;
+}
+
+.main-content {
+  min-height: 70vh;
+  padding: 35px 0 60px;
+}
+
+.hero {
+  padding: 45px;
+  border-radius: 18px;
+  background: #e5f6ee;
+}
+
+.hero h1 {
+  max-width: 650px;
+  font-size: clamp(32px, 5vw, 48px);
+}
+
+.eyebrow {
+  color: #0b8b63;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.section-heading {
+  margin: 35px 0 20px;
+}
+
+.panel,
+.job-card {
+  padding: 22px;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  background: white;
+}
+
+.filters {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.filters input {
+  flex: 1;
+}
+
+.filters input,
+.filters select,
+.form-group input,
+.form-group textarea,
+.form-group select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #d8e0e8;
+  border-radius: 7px;
+  background: white;
+}
+
+.jobs-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.job-card h2 {
+  font-size: 19px;
+}
+
+.job-card-top,
+.job-card-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.company-avatar {
+  display: grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 10px;
+  background: #e5f6ee;
+  color: #0b8b63;
+  font-weight: bold;
+}
+
+.badge {
+  padding: 6px 10px;
+  border-radius: 6px;
+  background: #e5f6ee;
+  color: #0b8b63;
+  font-size: 12px;
+}
+
+.company-name,
+.job-meta,
+.job-description,
+.created-date {
+  color: #64748b;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.job-card-bottom {
+  margin-top: 20px;
+  padding-top: 15px;
+  border-top: 1px solid #e2e8f0;
+}
+
+.button {
+  display: inline-block;
+  padding: 11px 15px;
+  border: 0;
+  border-radius: 7px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.button-primary {
+  background: #16a878;
+  color: white;
+}
+
+.button-outline {
+  border: 1px solid #d8e0e8;
+  background: white;
+  color: #172b3a;
+}
+
+.button-ghost {
+  background: #edf2f7;
+  color: #475569;
+}
+
+.button-danger {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.form-page {
+  max-width: 800px;
+  margin: auto;
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 20px;
+  color: #0b8b63;
+}
+
+.job-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+.form-actions {
+  justify-content: flex-end;
+  padding-top: 18px;
+  border-top: 1px solid #e2e8f0;
+}
+
+.form-error,
+.state-error {
+  color: #b91c1c;
+}
+
+.site-footer {
+  padding: 25px 0;
+  border-top: 1px solid #e2e8f0;
+  color: #64748b;
+  font-size: 12px;
+}
+
+@media (max-width: 650px) {
+  .site-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .main-nav {
+    gap: 12px;
+  }
+
+  .hero {
+    padding: 25px;
+  }
+
+  .filters {
+    flex-direction: column;
+  }
+
+  .jobs-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .app-shell {
+    padding: 0 15px;
+  }
+}

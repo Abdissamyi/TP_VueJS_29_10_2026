@@ -1,0 +1,38 @@
+
+{
+  "jobs": [
+    {
+      "id": "1",
+      "title": "Développeur Vue.js",
+      "description": "Développer et maintenir des interfaces web avec Vue.js.",
+      "salary": 12000,
+      "createdAt": "2026-10-20",
+      "experience": 1,
+      "location": "Casablanca",
+      "type": "Stage",
+      "company": "Web Solutions"
+    },
+    {
+      "id": "2",
+      "title": "Développeur Backend PHP",
+      "description": "Concevoir des API REST avec PHP et MySQL.",
+      "salary": 9000,
+      "createdAt": "2026-10-18",
+      "experience": 2,
+      "location": "Rabat",
+      "type": "CDI",
+      "company": "Digital Maroc"
+    },
+    {
+      "id": "3",
+      "title": "Stagiaire en Intelligence Artificielle",
+      "description": "Participer à la préparation des données et aux prototypes de machine learning.",
+      "salary": 3000,
+      "createdAt": "2026-10-15",
+      "experience": 0,
+      "location": "Télétravail",
+      "type": "Stage",
+      "company": "AI Lab"
+    }
+  ]
+}
